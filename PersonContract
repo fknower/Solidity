@@ -1,0 +1,22 @@
+pragma solidity ^0.4.24;
+contract person{
+    string Name; 
+    uint88 Age;
+    
+    function SetName(string NameSetter) {
+        Name = NameSetter;
+    }
+    
+    function SetAge(uint88 AgeSetter) {
+        Age = AgeSetter;
+    }
+    
+    function GetName() view returns(string) {
+         return Name;
+    }
+    
+    function GetAge() view returns(uint88) {
+        return Age;
+    }
+    
+}
